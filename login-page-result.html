@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login</title>
+    <style>
+        /* Base page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Centered Login Card */
+        .login-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 320px;
+            text-align: center;
+        }
+
+        /* Logo image */
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* Headings and text */
+        h1 {
+            font-size: 22px;
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+
+        /* Form elements layout */
+        form {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        label {
+            font-size: 13px;
+            color: #444444;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff;
+        }
+
+        /* Submit Button */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer link */
+        .footer-text {
+            margin-top: 20px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="login-card">
+        
+        <!-- Header Image & Text -->
+        <img src="https://picsum.photos/100/100" alt="Logo" class="logo">
+        <h1>Welcome Back</h1>
+        <p>Please log in to your account</p>
+
+        <!-- Semantic Form -->
+        <form action="#" method="POST">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <input type="submit" value="Log In">
+        </form>
+
+        <!-- Footer Link -->
+        <p class="footer-text">
+            Don't have an account? <a href="#">Sign up</a>
+        </p>
+
+    </div>
+
+</body>
+</html>
